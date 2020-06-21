@@ -76,9 +76,9 @@ public class mainClass extends utilityClass {
 	@Test(priority = 4)
 	private void getEditorsPick() throws IOException, InterruptedException {
 		hp = new homePage();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		String url = propertyRead("url");
 		geturl(url);
-		Thread.sleep(5000);
 		getText(hp.getEditorsPick());
 		hp.systemTime();
 		screenshot();
