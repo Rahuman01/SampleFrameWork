@@ -78,7 +78,7 @@ public class mainClass extends utilityClass {
 		hp = new homePage();
 		String url = propertyRead("url");
 		geturl(url);
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		getText(hp.getEditorsPick());
 		hp.systemTime();
 		screenshot();
